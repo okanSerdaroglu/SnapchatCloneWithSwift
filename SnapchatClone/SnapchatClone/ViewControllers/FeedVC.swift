@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  FeedVC.swift
 //  SnapchatClone
 //
 //  Created by Okan Serdaroğlu on 12.06.2020.
@@ -8,13 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class FeedVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
+    
+@IBOutlet weak var tableViewSnapList:UITableView!
 
 
 }
-
