@@ -108,13 +108,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="R6C-ga-JTe">
-                                <rect key="frame" x="58" y="102" width="298" height="528"/>
+                                <rect key="frame" x="58" y="102" width="299" height="528"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="299" id="QDC-EO-AFO"/>
                                     <constraint firstAttribute="height" constant="528" id="Y6q-ou-gH8"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44y-7v-4IZ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44y-7v-4IZ">
                                 <rect key="frame" x="108" y="680" width="199" height="46"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="sjN-eV-757"/>
@@ -181,7 +181,7 @@
         <!--Feed-->
         <scene sceneID="2Gr-Wy-svL">
             <objects>
-                <viewController id="87Y-1i-tI1" customClass="SnapVC" customModule="SnapchatClone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="87Y-1i-tI1" customClass="FeedVC" customModule="SnapchatClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mkp-xj-Aei">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -202,7 +202,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Feed" image="f.circle.fill" catalog="system" id="Q0A-4d-djb"/>
                     <connections>
-                        <outlet property="tableViewSnapList" destination="PSH-k1-he8" id="mqg-oG-qET"/>
+                        <outlet property="tableViewSnapList" destination="PSH-k1-he8" id="sci-p8-Ycf"/>
                         <segue destination="0mW-Ud-e8o" kind="show" id="HXL-JJ-e9O"/>
                     </connections>
                 </viewController>
