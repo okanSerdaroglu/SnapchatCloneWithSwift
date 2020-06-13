@@ -8,15 +8,30 @@
 
 import UIKit
 
-class UploadVC: UIViewController {
+class UploadVC: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        imageViewUploadedImage.isUserInteractionEnabled = true
+        let gestureRecognizer = UITapGestureRecognizer(target: self, action:#selector(choosePicture))
+        imageViewUploadedImage.addGestureRecognizer(gestureRecognizer)
+
+    }
+    
+    @objc func choosePicture(){
+        let picker = UIImagePickerController()
+        picker.delegate = self
+        picker.sourceType = .photoLibrary
+        self.present(picker,animated: true,completion: nil)
     }
     
 
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        imageViewUploadedImage.image = info[.originalImage] as? UIImage
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     @IBOutlet weak var imageViewUploadedImage: UIImageView!
     
 
