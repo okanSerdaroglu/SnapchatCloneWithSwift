@@ -16,6 +16,7 @@
 		3D2BF1A62493B62F0031BF2F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D2BF1A52493B62F0031BF2F /* GoogleService-Info.plist */; };
 		3DBB17E92494F7AA00F85047 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBB17E82494F7AA00F85047 /* SettingVC.swift */; };
 		3DE15068249507A10038E5A9 /* UserSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE15067249507A10038E5A9 /* UserSingleton.swift */; };
+		3DE1506A249810610038E5A9 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE15069249810610038E5A9 /* FeedCell.swift */; };
 		3DF8738B2493D76A008AA3A2 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF8738A2493D76A008AA3A2 /* FeedVC.swift */; };
 		3DF8738D2493D77C008AA3A2 /* UploadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF8738C2493D77C008AA3A2 /* UploadVC.swift */; };
 		3DF873912493DF22008AA3A2 /* SnapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF873902493DF22008AA3A2 /* SnapVC.swift */; };
@@ -35,6 +36,7 @@
 		3D2BF1A52493B62F0031BF2F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3DBB17E82494F7AA00F85047 /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
 		3DE15067249507A10038E5A9 /* UserSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSingleton.swift; sourceTree = "<group>"; };
+		3DE15069249810610038E5A9 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		3DF8738A2493D76A008AA3A2 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		3DF8738C2493D77C008AA3A2 /* UploadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadVC.swift; sourceTree = "<group>"; };
 		3DF873902493DF22008AA3A2 /* SnapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapVC.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				3D2BF19A2493B5110031BF2F /* Assets.xcassets */,
 				3D2BF19C2493B5110031BF2F /* LaunchScreen.storyboard */,
 				3D2BF19F2493B5110031BF2F /* Info.plist */,
+				3DE15069249810610038E5A9 /* FeedCell.swift */,
 			);
 			path = SnapchatClone;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				3DF8738D2493D77C008AA3A2 /* UploadVC.swift in Sources */,
 				3DF873912493DF22008AA3A2 /* SnapVC.swift in Sources */,
 				3D2BF1942493B50F0031BF2F /* SceneDelegate.swift in Sources */,
+				3DE1506A249810610038E5A9 /* FeedCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
