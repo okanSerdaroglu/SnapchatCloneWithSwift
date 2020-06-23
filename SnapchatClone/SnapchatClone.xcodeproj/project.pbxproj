@@ -14,6 +14,7 @@
 		3D2BF19B2493B5110031BF2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D2BF19A2493B5110031BF2F /* Assets.xcassets */; };
 		3D2BF19E2493B5110031BF2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D2BF19C2493B5110031BF2F /* LaunchScreen.storyboard */; };
 		3D2BF1A62493B62F0031BF2F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D2BF1A52493B62F0031BF2F /* GoogleService-Info.plist */; };
+		3D3AF0FE24A2900D004214C5 /* Snap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3AF0FD24A2900D004214C5 /* Snap.swift */; };
 		3DBB17E92494F7AA00F85047 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBB17E82494F7AA00F85047 /* SettingVC.swift */; };
 		3DE15068249507A10038E5A9 /* UserSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE15067249507A10038E5A9 /* UserSingleton.swift */; };
 		3DE1506A249810610038E5A9 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE15069249810610038E5A9 /* FeedCell.swift */; };
@@ -34,6 +35,7 @@
 		3D2BF19D2493B5110031BF2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D2BF19F2493B5110031BF2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D2BF1A52493B62F0031BF2F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3D3AF0FD24A2900D004214C5 /* Snap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snap.swift; sourceTree = "<group>"; };
 		3DBB17E82494F7AA00F85047 /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
 		3DE15067249507A10038E5A9 /* UserSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSingleton.swift; sourceTree = "<group>"; };
 		3DE15069249810610038E5A9 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				3DE15067249507A10038E5A9 /* UserSingleton.swift */,
+				3D3AF0FD24A2900D004214C5 /* Snap.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DE15068249507A10038E5A9 /* UserSingleton.swift in Sources */,
+				3D3AF0FE24A2900D004214C5 /* Snap.swift in Sources */,
 				3DF8738B2493D76A008AA3A2 /* FeedVC.swift in Sources */,
 				3DBB17E92494F7AA00F85047 /* SettingVC.swift in Sources */,
 				3D2BF1962493B50F0031BF2F /* SignInVC.swift in Sources */,
