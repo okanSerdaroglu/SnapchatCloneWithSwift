@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import SDWebImage
 
 class FeedVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
@@ -15,6 +16,8 @@ class FeedVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     let fireStoreDatabase = Firestore.firestore()
     var snapArray = [Snap]()
+    var chosenSnap : Snap?
+    var timeLeft : Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +26,7 @@ class FeedVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         tableViewSnapList.dataSource = self
         
         getUserInfo()
+        getSnapsFromFirebase()
     }
     
     func getSnapsFromFirebase (){
@@ -46,7 +50,7 @@ class FeedVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
                                             }
                                         }
                                         
-                                        // TimeLeft
+                                        self.timeLeft = 24 - difference
                                         
                                     }
                                     
@@ -56,6 +60,7 @@ class FeedVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
                             }
                         }
                     }
+                    self.tableViewSnapList.reloadData()
                 }
             }
         }
@@ -94,8 +99,23 @@ class FeedVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! FeedCell
+        let snap = snapArray[indexPath.row]
         cell.labelUserName.text = snapArray[indexPath.row].username
+        cell.feedImageViewCell.sd_setImage(with: URL(string: snap.imageUrlArray[0]))
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toSnapVC"{
+            let destinationVC = segue.destination as! SnapVC
+            destinationVC.selectedSnap = chosenSnap
+            destinationVC.selectedTime = self.timeLeft
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        chosenSnap = self.snapArray[indexPath.row]
+        performSegue(withIdentifier: "toSnapVC", sender: nil)
     }
     
 }
